@@ -1,0 +1,140 @@
+/* Navigation */
+nav {
+  background: #e6f0fa; /* Light blue background */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #d1e0ee;
+  display: flex;
+  justify-content: center; /* Center the nav links */
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px; /* Equal spacing on both sides */
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #66b0ff;
+}
+
+nav button {
+  background: #66b0ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #5599e6;
+}
+
+/* Container */
+.container {
+  max-width: 600px; /* Reduced width for better centering */
+  margin: 80px auto 20px; /* Added top margin to account for fixed nav */
+  padding: 20px;
+  text-align: center; /* Center-align all content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure content inside is centered */
+}
+
+/* Headings */
+h1, h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Forms */
+form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  max-width: 400px; /* Smaller form width for better centering */
+  width: 100%; /* Ensure it takes full available width up to max-width */
+}
+
+/* Form Elements */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d1e0ee;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #f9fcff; /* Very light blue background */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background: #66b0ff;
+  color: #fff;
+  border: 1px #66b0ff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5599e6;
+}
+
+/* Table */
+table {
+  width: 100%;
+  max-width: 600px; /* Match container width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center; /* Center-align table content */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background: #f0f5ff; /* Light blue header */
+  font-weight: bold;
+  color: #333;
+}
+
+tr:hover {
+  background: #f9fcff;
+}
+
+/* Error Messages */
+.error {
+  color: #ff4444;
+  margin-bottom: 15px;
+}
+
+/* Toastify Overrides */
+.Toastify__toast {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
