@@ -21,7 +21,7 @@ const AutomobileTable = () => {
   const fetchAutomobiles = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/automobiles', {
+      const response = await axios.get('https://mern-back-end-ys0g.onrender.com/api/automobiles', {
         headers: {
           'x-auth-token': token
         }
@@ -36,7 +36,7 @@ const AutomobileTable = () => {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/automobiles/${id}`, {
+      await axios.delete(`https://mern-back-end-ys0g.onrender.com/api/automobiles/${id}`, {
         headers: {
           'x-auth-token': token
         }
@@ -67,7 +67,7 @@ const AutomobileTable = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:5000/api/automobiles/${currentAutomobile._id}`, 
+        `https://mern-back-end-ys0g.onrender.com/api/automobiles/${currentAutomobile._id}`, 
         currentAutomobile,
         {
           headers: {

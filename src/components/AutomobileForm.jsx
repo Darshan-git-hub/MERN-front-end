@@ -23,7 +23,7 @@ const AutomobileForm = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/automobiles', formData, {
+      const response = await axios.post('https://mern-back-end-ys0g.onrender.com/api/automobiles', formData, {
         headers: {
           'x-auth-token': token
         }
